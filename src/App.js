@@ -9,7 +9,7 @@ function App() {
   const changeTheme = () => setDark(!dark);
 
   return (
-    <div className={"theme" + (dark ? "theme--dark" : "theme--default")}>
+    <div className={"theme " + (dark ? "theme--dark" : "theme--default")}>
       <div className="base">
         <Header changeTheme={changeTheme} dark={dark} />
         <Switch>
